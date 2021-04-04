@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background-color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-header {
+    height: 100px;
+    border-bottom: 1px solid #444;
+    background: linear-gradient(to top, #333, #111);
+    display: flex;
+    justify-content: space-around;
+    padding: 0 50px;
+}
+
+.info-header__box {
+    width: 100px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    color: #333;
+    background-color: #cccccc;
+
+}
+
+.info-header__title {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.info-header__lcd {
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.app {
+    height: calc(100vh - 100px);
+}
+
+.hide {
+    display: none;
+}
+
+.modal__backBlur {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 30;
+    background-color: rgba(12,12,12,.8);
+}
+
+.modal__card {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    width: 500px;
+    height: 300px;
+    z-index: 30;
+    padding-top: 30px;
+    background-color: black;
+    color: #ccc;
+}
+
+.modal__title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.modal__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__info {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 30px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    outline: none;
+    text-transform: uppercase;
+    transition: background-color .3s;
+}
+
+.btn:hover {
+    background: #007e8f;
+    cursor: pointer;
+    outline: none;
+}
+
